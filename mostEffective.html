@@ -21,9 +21,28 @@ html {
 }
 
 
-.row{
-    /* margin-top: 2%; */
-}</style>
+  img:hover {
+    border-style: solid;
+    border-radius: 5px;
+    opacity: 1;
+  }
+
+  img {
+  max-width:100%;
+  height:auto;
+}
+.container {
+  display:flex;
+  width:90%;
+  margin:0 auto;
+}
+.box {
+  flex:1;
+  margin:0 4px;
+}
+
+
+</style>
 
     <script
   src="https://code.jquery.com/jquery-3.6.1.js"
@@ -628,101 +647,9 @@ let keys = '';
         $('#mostEffect').html('')
         $('#mostEffect').append(response)
 
-        // response += "\r\neffective against " + interaction.values[0] + " .";
-
-        // interaction.reply(
-        //   response
-        // )
-
-      }
-    
-
-    //   setTimeout(function () { clearIt(interaction); }, 3000)
-
-    // }
-
-            //clear
-            
-            // $("#Normal").html('');
-            // $("#Fighting").html('');
-            // $('#Flying').html('');
-
-            // $('#Poison').html('');
-            // $('#Ground').html('');
-            // $('#Rock').html('');
-
-            // $('#Bug').html('');
-            // $('#Ghost').html('');
-            // $('#Steel').html('');
-
-            // $('#Fire').html('');
-            // $('#Water').html('');
-            // $('#Grass').html('');
-
-            // $('#Electric').html('');
-            // $('#Psychic').html('');
-            // $('#Ice').html('');
-
-            // $('#Dragon').html('');
-            // $('#Dark').html('');
-            // $('#Fairy').html('');
-
-
-            //
-
-            // $("#Normal").append(typesAmounts.Normal)
-            // $("#Fighting").append(typesAmounts.Fighting)
-            // $('#Flying').append(typesAmounts.Flying)
-
-            // $('#Poison').append(typesAmounts.Poison)
-            // $('#Ground').append(typesAmounts.Ground)
-            // $('#Rock').append(typesAmounts.Rock)
-
-            // $('#Bug').append(typesAmounts.Bug)
-            // $('#Ghost').append(typesAmounts.Ghost)
-            // $('#Steel').append(typesAmounts.Steel)
-
-            // $('#Fire').append(typesAmounts.Fire)
-            // $('#Water').append(typesAmounts.Water)
-            // $('#Grass').append(typesAmounts.Grass)
-
-            // $('#Electric').append(typesAmounts.Electric)
-            // $('#Psychic').append(typesAmounts.Psychic)
-            // $('#Ice').append(typesAmounts.Ice)
-
-            // $('#Dragon').append(typesAmounts.Dragon)
-            // $('#Dark').append(typesAmounts.Dark)
-            // $('#Fairy').append(typesAmounts.Fairy)
-
-    
-//             if (typeSelect.length == 0){
-               
-//                $("#Normal").html('');
-//               $("#Fighting").html('');
-//               $('#Flying').html('');
-  
-//               $('#Poison').html('');
-//               $('#Ground').html('');
-//               $('#Rock').html('');
-  
-//               $('#Bug').html('');
-//               $('#Ghost').html('');
-//               $('#Steel').html('');
-  
-//               $('#Fire').html('');
-//               $('#Water').html('');
-//               $('#Grass').html('');
-  
-//               $('#Electric').html('');
-//               $('#Psychic').html('');
-//               $('#Ice').html('');
-  
-//               $('#Dragon').html('');
-//               $('#Dark').html('');
-//               $('#Fairy').html('');
-  
    
-//   }
+      }
+
 
 
 
@@ -731,163 +658,169 @@ let keys = '';
 
 
     </script>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col">
-           <div></div> What Are you Battling?  <br>    
-           <span id="appender"></span> :  <span id="appender2"></span>
-        </div>
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
 
+<div style="margin-top: 5%;">
+
+<h3 style="text-align: center;">What Are you Battling?</h3>   
+ 
+<h4 style="text-align: center;"><span id="appender" ></span> :  <span id="appender2"></span></h4>
+
+           
+         
+        
+
+
+ 
+
+<hr>
+
+<h4 style="text-align: center;">Type-How Effective against what you are battling.</h4>   
+ 
+<h5 style="text-align: center;"><span id="mostEffect" class="dekko"></span></h5>
+</div>
+           
+
+
+<hr>
+<div style="margin:0% 2%;">
+
+
+
+<div class="container">
+        <div class="box">
+            <img src="./types/transp/Normal.png"  onclick="myFunction('Normal')"> <div>Normal</div>
+        </div>
+       <div class="box">
+            <img src="./types/transp/Fighting.png" onclick="myFunction('Fighting')"><div>Fighting</div>
+        </div>
+        <div class="box">
+            <img src="./types/transp/Flying.png" onclick="myFunction('Flying')"><div>Flying</div>
+        </div>
+</div>
+</div>
+
+<div>
+    <div class="container">
+            <div class="box">
+                <img src="./types/transp/Bug.png"  onclick="myFunction('Bug')"><div>Bug</div>
+            </div>
+            <div class="box">
+                <img src="./types/transp/Ghost.png" onclick="myFunction('Ghost')"><div>Ghost</div>
+            </div>
+            <div class="box">
+                <img src="./types/transp/Steel.png" onclick="myFunction('Steel')"><div>Steel</div>
+                </div>
+    </div>
+</div>
     
 
-
-<br>
-
-
-<hr>
-<div class="row">
-    <div class="col"></div>
-
-    <div class="col">
-    <div>Type-How Effective against what you are battling.<br><br><span id="mostEffect" class="dekko"></span></div>
+<div>
+    <div class="container">
+            <div class="box">
+                <img src="./types/transp/Fire.png" onclick="myFunction('Fire')"><div>Fire</div>
+                
+            </div>
+           <div class="box">
+                <img src="./types/transp/Water.png" onclick="myFunction('Water')"><div>Water</div>
+            </div>
+            <div class="box">
+                <img src="./types/transp/Grass.png" onclick="myFunction('Grass')"><div>Grass</div>
+            </div>
     </div>
-  
-    <div class="col"></div>
 </div>
 
-<hr>
-<div class="row">
-    <div class="col"></div>
-    <div class="col">
-        <div onclick="myFunction('Normal')"><img src="./transp/Normal.png"><div>Normal</div></div>
-        <div id="Normal"></div>
+<div>
+    <div class="container">
+            <div class="box">
+                <img src="./types/transp/Electric.png"  onclick="myFunction('Electric')"> <div>Electric</div>
+            </div>
+           <div class="box">
+                <img src="./types/transp/Psychic.png" onclick="myFunction('Psychic')"><div>Psychic</div>
+            </div>
+            <div class="box">
+                <img src="./types/transp/Ice.png" onclick="myFunction('Ice')"><div>Ice</div>
+            </div>
     </div>
-    <div class="col">
-        <div onclick="myFunction('Fighting')"><img src="./transp/Fighting.png"><div>Fighting</div></div>
-        <div id='Fighting'></div> 
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Flying')"><img src="./transp/Flying.png"><div>Flying</div></div>
-        <div id='Flying'></div>
-    </div>
-    <div class="col"></div>
 </div>
 
-
-
-<div class="row">
-    <div class="col"></div>
-    <div class="col">
-        <div onclick="myFunction('Poison')"><img src="./transp/Poison.png"><div>Poison</div></div>
-        <div id='Poison'></div> 
+<div>
+    <div class="container">
+            <div class="box">
+                <img src="./types/transp/Dragon.png"  onclick="myFunction('Dragon')"> <div>Dragon</div>
+            </div>
+           <div class="box">
+                <img src="./types/transp/Dark.png" onclick="myFunction('Dark')"><div>Dark</div>
+            </div>
+            <div class="box">
+                <img src="./types/transp/Fairy.png" onclick="myFunction('Fairy')"><div>Fairy</div>
+            </div>
     </div>
-    <div class="col">
-    <div onclick="myFunction('Ground')"><img src="./transp/Ground.png"><div>Ground</div></div>
-    <div id='Ground'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Rock')"><img src="./transp/Rock.png"><div>Rock</div></div>
-        <div id='Rock'></div>
-    </div>
-    <div class="col"></div>
 </div>
 
 
-<div class="row">
-    <div class="col"></div>
-    <div class="col">
-        <div onclick="myFunction('Bug')"><img src="./transp/Bug.png"><div>Bug</div></div>
+
+<!-- 
+
+<div class="container">
+    <div class="box">
+        <img src="./types/transp/Poison.png" onclick="myFunction('Poison')"><div>Poison</div>
+    </div>
+    <div class="box">
+    <img src="./types/transp/Ground.png" onclick="myFunction('Ground')"><div>Ground</div>
+    </div>
+    <div class="box">
+    <div onclick="myFunction('Rock')"><img src="./types/transp/Rock.png"><div>Rock</div>
+    </div>
+</div>
+
+
+
+<div class="container">
+        <div onclick="myFunction('Bug')"><img src="./types/transp/Bug.png"><div>Bug</div></div>
         <div id='Bug'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Ghost')"><img src="./transp/Ghost.png"><div>Ghost</div></div>
+        <div onclick="myFunction('Ghost')"><img src="./types/transp/Ghost.png"><div>Ghost</div></div>
         <div id='Ghost'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Steel')"><img src="./transp/Steel.png"><div>Steel</div></div>
+        <div onclick="myFunction('Steel')"><img src="./types/transp/Steel.png"><div>Steel</div></div>
         <div id='Steel'></div>
-    </div>
-    <div class="col"></div>
 </div>
 
-<div class="row">
-    <div class="col"></div>
-    <div class="col">
-        <div onclick="myFunction('Fire')"><img src="./transp/Fire.png"><div>Fire</div></div>
+<div class="container">
+        <div onclick="myFunction('Fire')"><img src="./types/transp/Fire.png"><div>Fire</div></div>
         <div id='Fire'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Water')"><img src="./transp//Water.png"><div>Water</div></div>
+        <div onclick="myFunction('Water')"><img src="./types/transp/Water.png"><div>Water</div></div>
         <div id='Water'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Grass')"><img src="./transp/Grass.png"><div>Grass</div></div>
+        <div onclick="myFunction('Grass')"><img src="./types/transp/Grass.png"><div>Grass</div></div>
         <div id='Grass'></div>
-    </div>
-    <div class="col"></div>
-</div>
-
-
-<div class="row">
-    <div class="col"></div>
-    <div class="col">
-   <div onclick="myFunction('Electric')"><img src="./transp/electric.png"><div>Electric</div></div>
+ </div>
+  
+ <div class="container">
+        <div onclick="myFunction('Electric')"><img src="./types/transp/Electric.png"><div>Electric</div></div>
         <div id='Electric'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Psycic')"><img src="./transp/Psychic.png"><div>Psychic</div></div>
+        <div onclick="myFunction('Psycic')"><img src="./types/transp/Psychic.png"><div>Psychic</div></div>
         <div id='Water'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Ice')"><img src="./transp/Ice.png"><div>Ice</div></div>
+        <div onclick="myFunction('Ice')"><img src="./types/transp/Ice.png"><div>Ice</div></div>
         <div id='Grass'></div>
     </div>
-    <div class="col"></div>
-</div>
 
 
 
-
-
-<div class="row">
-    <div class="col"></div>
-    <div class="col">
-        <div onclick="myFunction('Dragon')"><img src="./transp/Dragon.png"><div>Dragon</div></div>
+    <div class="container">
+        <div onclick="myFunction('Dragon')"><img src="./types/transp/Dragon.png" onclick="myFunction('Dragon')><div>Dragon</div></div>
         <div id='Dragon'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Dark')"><img src="./transp/Dark.png"><div>Dark</div></div>
+        <div onclick="myFunction('Dark')"><img src="./types/transp/Dark.png"><div>Dark</div></div>
         <div id='Dark'></div>
-    </div>
-    <div class="col">
-        <div onclick="myFunction('Fairy')"><img src="./transp/Fairy.png"><div>Fairy</div></div>
+        <div onclick="myFunction('Fairy')"><img src="./types/transp/Fairy.png"><div>Fairy</div></div>
         <div id='Fairy'></div>
-    </div>
-    <div class="col"></div>
+        </div>
+ 
+ -->
+
 </div>
-
-
 
 
 
 <br>
-<style>
-    img {
-    height: 50%;
-    opacity: .75;
-    transition: opacity .5s ease-in-out;
-  }
-  img:hover {
-    border-style: solid;
-    border-radius: 5px;
-    opacity: 1;
-  }
 
-</style>
  
 </html>
 
